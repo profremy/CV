@@ -1,0 +1,23 @@
+// THEME COLORS
+$purple-dark: #7d2b7d;
+$purple-light: #be41be;
+// $purple-light: #9c359c;
+
+$green-dark: #6a8b3c;
+$green-light: #83ab49;
+
+$font-family: 'Roboto', sans-serif;
+// $font-family: "Helvetica Neue", Arial;
+
+
+// USE @use to IMPORT ENTIRE BOOTSTRAP (variables, mixins, functions etc. or you can import only what is needed)
+@forward '../node_modules/bootstrap/scss/bootstrap.scss' with (
+
+// OVERRIDE DEFAULT VARIABLES BY ADDING A CONFIGURATION MAP OF VARIABLES YOU DEFINED ABOVE 
+
+$primary: $purple-dark,
+$secondary: $green-dark,
+$font-family-sans-serif: $font-family
+
+);
+
