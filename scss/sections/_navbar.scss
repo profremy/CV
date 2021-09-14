@@ -6,6 +6,16 @@
     .navbar-brand {
         font-size: 2rem;
         font-weight: 500;
+
+        &::before {
+            content: "\f5fc";
+            font-family: 'Font Awesome 5 Free';
+            color: $white;
+            font-weight: 600;
+            margin-right: 0.5rem;
+            font-size: 1.8rem;
+            vertical-align: middle;
+        }
     }
 }
 

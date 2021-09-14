@@ -53,15 +53,15 @@
             font-size: 1.3em;
         }
         
-        &::before {
-            content: "\f5fc";
-            font-family: 'Font Awesome 5 Free';
-            color: $purple-light;
-            font-weight: 600;
-            margin-right: 0.5rem;
-            font-size: 1.8rem;
-            vertical-align: middle;
-        }
+        // &::before {
+        //     content: "\f5fc";
+        //     font-family: 'Font Awesome 5 Free';
+        //     color: $purple-light;
+        //     font-weight: 600;
+        //     margin-right: 0.5rem;
+        //     font-size: 1.8rem;
+        //     vertical-align: middle;
+        // }
     }
     
     &__qualification {
