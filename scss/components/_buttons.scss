@@ -2,14 +2,10 @@
 @use '../components/mixins' as *;
 
 .btn-rounded {
-    
     position: relative;
-    // padding: 0.8375rem 4.375rem 0.8375rem 1.25rem;
     font-weight: 500;
     margin: 0;
-    // border: 0.1rem solid rgba($white, 0.6);
-    // background-color: $white;
-    // display: block;
+    
 
     span {
         position: absolute;
@@ -23,7 +19,7 @@
 
         i {
             color: $white;
-            font-size: .7rem;
+            font-size: .6rem;
             line-height: 1.5rem;
         }
 

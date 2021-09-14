@@ -18,7 +18,7 @@
 
 <body class="not-selectable">
 
-  <nav class="navbar navbar-expand-lg navbar-dark shadow menu pt-3">
+  <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top menu pt-3">
     <div class="container">
       <a class="navbar-brand" href="#">R<sup>2</sup></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -39,38 +39,40 @@
               <i class="fas fa-envelope"></i>
             </span>
           </a>
-
-          <!-- Modal -->
-          <div class="modal fade" id="contactInfo" tabindex="-1" aria-labelledby="contactInfoModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header bg-secondary text-white">
-                  <h5 class="modal-title" id="contactInfoModalLabel">My Email</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <div class="container">
-                    <div class="row">
-                      <code class="d-flex justify-content-around bg-light p-2">
-                        remirichards@gmail.com
-                        <span class="clickToCopy"><i class="fas fa-copy"></i></span>
-                      </code>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary text-light fw-light" data-bs-dismiss="modal"><i
-                      class="far fa-times-circle"></i> Dismiss</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
   </nav>
+
+  <!-- Modal -->
+  <!-- BE SURE NOT TO PLACE A MODAL WITHIN AN ELEMENT THAT HAS A FIXED POSITION. IT TENDS TO FREEZE PAGE -->
+  <div class="modal fade" id="contactInfo" tabindex="-1" aria-labelledby="contactInfoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-secondary text-white">
+          <h5 class="modal-title" id="contactInfoModalLabel">My Email</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row justify-content-around">
+            <div class="col-9 col-lg-6">
+              <input type="text" value="remirichards@gmail.com" class="textToCopy form-control" disabled></input>
+            </div>
+            <div class="col-auto">
+              <span class="copyTrigger" title="Click to copy"><i class="fas fa-copy fs-4"></i></span>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary text-light fw-light" data-bs-dismiss="modal"><i
+              class="far fa-times-circle"></i> Dismiss</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Modal -->
 
   <div id="about" class="intro-section">
     <div class="container identity text-light py-4">
@@ -85,7 +87,7 @@
         <div class="row">
           <div class="col-lg-6 col-12 bg-gradient intro-section__details--left">
             <div class="intro-section__details--left-inner shadow-lg">
-              <img src="images/team1.jpg" alt="Remigius Photo" class="photo img-fluid rounded-circle mt-3">
+              <img src="images/team1.png" alt="Remigius Photo" class="photo img-fluid rounded-circle mt-3">
               <div class="social bg-light">
                 <div class="container mt-3">
                   <div class="row py-2 text-center text-primary">

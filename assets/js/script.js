@@ -3,6 +3,8 @@ console.log('script is started');
 const elements = {
   doc: document.getElementsByTagName('body'), // An array of NodeList (not elements)
   doc: document.querySelector('body'), // Select body tag
+  textToCopy: document.querySelector('.textToCopy'),
+  copyTrigger: document.querySelector('.copyTrigger'),
 };
 
 {
@@ -29,6 +31,14 @@ const elements = {
   });
 
   elements.doc.addEventListener('paste', (e) => {
+    e.preventDefault();
+  });
+
+  elements.copyTrigger.addEventListener('click', (e) => {
+    const selection = elements.textToCopy;
+    selection.select();
+    selection.setSelectionRange(0, 99999); /* For mobile devices */
+    navigator.clipboard.writeText(selection.value);
     e.preventDefault();
   });
 }

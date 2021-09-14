@@ -2,10 +2,7 @@
 @use '../components/mixins' as *;
 
 .navbar {
-    @include media-breakpoint-down(lg) {
-        text-align: center;
-    }
-
+   
     .navbar-brand {
         font-size: 2rem;
         font-weight: 500;
@@ -23,9 +20,12 @@
             text-transform: capitalize;
             font-weight: 200;
             letter-spacing: 0.1em;
-            
-            
-    
+
+            @include media-breakpoint-down(lg) {
+                text-align: center;
+                padding: 0.7rem 0;
+            }
+
         }
 
         .nav-link:not(:first-child) {

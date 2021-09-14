@@ -11140,7 +11140,7 @@ textarea.form-control-lg {
 }
 .btn-rounded span i {
   color: #fff;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   line-height: 1.5rem;
 }
 .btn-rounded:hover {
@@ -11156,11 +11156,6 @@ textarea.form-control-lg {
   transition-delay: 1s ease-in-out;
 }
 
-@media (max-width: 991.98px) {
-  .navbar {
-    text-align: center;
-  }
-}
 .navbar .navbar-brand {
   font-size: 2rem;
   font-weight: 500;
@@ -11175,6 +11170,12 @@ textarea.form-control-lg {
   text-transform: capitalize;
   font-weight: 200;
   letter-spacing: 0.1em;
+}
+@media (max-width: 991.98px) {
+  .menu .navbar-nav .nav-link {
+    text-align: center;
+    padding: 0.7rem 0;
+  }
 }
 .menu .navbar-nav .nav-link:not(:first-child) {
   border-left: 1px solid #6a8b3c;
@@ -11218,11 +11219,7 @@ textarea.form-control-lg {
   padding: 2rem 0 0 0;
   width: 100%;
   height: 100%;
-}
-@media (max-width: 575.98px) {
-  .intro-section {
-    padding: 2rem 0 0 0;
-  }
+  margin-top: 3rem;
 }
 @media (max-width: 575.98px) {
   .intro-section .identity {
@@ -11299,10 +11296,25 @@ textarea.form-control-lg {
 @media (max-width: 575.98px) {
   .intro-section__details--right-hello {
     text-align: center;
+    padding: 0.5rem 0 0 1rem;
   }
 }
 .intro-section__details--right-hello .cta button {
   letter-spacing: 0.1rem;
+}
+
+.textToCopy {
+  border: none !important;
+  background-color: #f8f9fa !important;
+  cursor: pointer;
+}
+
+.copyTrigger {
+  cursor: pointer;
+}
+
+.copyTrigger:hover {
+  color: #6a8b3c;
 }
 
 /*# sourceMappingURL=style.css.map */
