@@ -11296,6 +11296,11 @@ textarea.form-control-lg {
   padding: 2rem 0 0 1rem;
   font-family: "Arial";
 }
+@media (max-width: 575.98px) {
+  .intro-section__details--right-hello {
+    text-align: center;
+  }
+}
 .intro-section__details--right-hello .cta button {
   letter-spacing: 0.1rem;
 }

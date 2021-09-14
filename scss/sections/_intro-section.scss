@@ -98,10 +98,15 @@
     }
 
     &__details--right {
+        
        
         &-hello {
             padding: 2rem 0 0 1rem;
             font-family: 'Arial';
+
+            @include media-breakpoint-down(sm){
+                text-align: center;
+            }
 
             .hello {
                 @include media-breakpoint-down(sm){
