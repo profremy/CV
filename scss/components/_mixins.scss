@@ -2,7 +2,7 @@
 
 // GRADIENT MIXIN 
 @mixin gradient {
-    background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+    background: linear-gradient(to right, rgba($primary, 0.80), rgba($secondary, 0.80));
 }
 
 // ABSOLUTE CENTER 
@@ -17,4 +17,5 @@
 @mixin transitionProperty {
     transition-duration: 1s;
     transition-property: all;
+    transition-delay: 1s ease-in-out;
 }

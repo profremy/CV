@@ -16,7 +16,7 @@
 
 </head>
 
-<body>
+<body class="not-selectable">
 
   <nav class="navbar navbar-expand-lg navbar-dark shadow menu pt-3">
     <div class="container">
@@ -32,9 +32,12 @@
           <a class="nav-link" href="#">Resume</a>
           <!-- <a class="nav-link" href="#">Contact</a> -->
           <!-- Button trigger modal -->
-          <a type="button" class="nav-link btn btn-primary modalBtn" data-bs-toggle="modal"
-            data-bs-target="#contactInfo">
-            Contact
+          <a type="button"
+            class="btn btn-secondary rounded-pill btn-rounded text-light fw-light btn-sm px-5 py-1 modalBtn"
+            data-bs-toggle="modal" data-bs-target="#contactInfo">
+            Contact <span>
+              <i class="fas fa-envelope"></i>
+            </span>
           </a>
 
           <!-- Modal -->
@@ -47,10 +50,17 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  remirichards@gmail.com
+                  <div class="container">
+                    <div class="row">
+                      <code class="d-flex justify-content-around bg-light p-2">
+                        remirichards@gmail.com
+                        <span class="clickToCopy"><i class="fas fa-copy"></i></span>
+                      </code>
+                    </div>
+                  </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i
+                  <button type="button" class="btn btn-secondary text-light fw-light" data-bs-dismiss="modal"><i
                       class="far fa-times-circle"></i> Dismiss</button>
                 </div>
               </div>
@@ -95,15 +105,19 @@
             </div>
           </div>
           <div class="col-lg-6 col-12 bg-light intro-section__details--right-hello">
-            <h1 class="display-1 hello">Hello</h1>
+            <h1 class="display-1 hello">Hello,</h1>
+
+            <p>I'm Remigius, a Full Stack Developer and Content Creator based in England.</p>
+            <p>I enjoy programming Python, JavaScript and Node.js applications and creating videos on Youtube.</p>
 
             <div class="d-grid d-md-block justify-content-center gap-4 pb-4 cta">
-              <button class="btn btn-primary px-3" type="button">Resume</button>
-              <button class="btn btn-secondary px-3" type="button">Projects</button>
+              <button class="btn btn-outline-secondary btn-rounded rounded-pill px-5 px-3" type="button">Resume <span>
+                  <i class="fas fa-file"></i>
+                </span></button>
+              <button class="btn btn-outline-secondary btn-rounded rounded-pill px-5 px-3" type="button">Projects <span>
+                  <i class="fas fa-code"></i>
+                </span></button>
             </div>
-
-            <p>Hello, I'm Remigius, a Full Stack Developer and Content Creator based in England.</p>
-            <p>I enjoy programming Python, JavaScript and Node.js applications and creating videos on Youtube.</p>
           </div>
         </div>
       </div>
