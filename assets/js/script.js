@@ -5,6 +5,7 @@ const elements = {
   doc: document.querySelector('body'), // Select body tag
   textToCopy: document.querySelector('.textToCopy'),
   copyTrigger: document.querySelector('.copyTrigger'),
+  footerSectionCopyright: document.querySelector('.footer-section__copyright'),
 };
 
 {
@@ -37,8 +38,15 @@ const elements = {
   elements.copyTrigger.addEventListener('click', (e) => {
     const selection = elements.textToCopy;
     selection.select();
-    selection.setSelectionRange(0, 99999); /* For mobile devices */
+    // selection.setSelectionRange(0, 99999); /* For mobile devices */
     navigator.clipboard.writeText(selection.value);
     e.preventDefault();
   });
+}
+
+{
+  // Save current year in a variable and call it on HTML Footer
+  const currentYear = new Date().getFullYear();
+  const copyRightNotice = `<span class="copyright">&copy; ${currentYear}. All rights reserved.</span>`;
+  elements.footerSectionCopyright.insertAdjacentHTML('afterbegin', copyRightNotice);
 }
