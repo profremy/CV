@@ -11142,6 +11142,10 @@ textarea.form-control-lg {
   color: #fff;
   font-size: 0.6rem;
   line-height: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .btn-rounded:hover {
   background: linear-gradient(to right, rgba(125, 43, 125, 0.8), rgba(106, 139, 60, 0.8));

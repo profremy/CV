@@ -21,6 +21,7 @@
             color: $white;
             font-size: .6rem;
             line-height: 1.5rem;
+            @include absoluteCenter;
         }
 
     }
