@@ -135,8 +135,81 @@
 
   <div id="resume" class="resume-section containter-fluid bg-light py-4">
     <div class="container py-2">
-      <h1 class="section-title display-1 text-center">RESUME</h1>
-      <h3 class="display-3">Education</h3>
+      <h1 class="section-title display-3 text-center">RESUME</h1>
+
+      <div class="d-grid d-md-block justify-content-center gap-4 py-4 resume-section__cta text-center">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-secondary btn-rounded rounded-pill fw-light px-5 py-2"
+          data-bs-toggle="modal" data-bs-target="#professionalProfile">
+          Professional Profile
+          <span>
+            <i class="fas fa-briefcase"></i>
+          </span>
+        </button>
+
+        <button type="button" class="btn btn-outline-secondary btn-rounded rounded-pill fw-light px-5 py-2"
+          data-bs-toggle="modal" data-bs-target="#careerObjective">
+          Career Objective
+          <span>
+            <i class="fas fa-user-circle"></i>
+          </span>
+        </button>
+      </div>
+
+      <!-- Modal -->
+      <!-- BE SURE NOT TO PLACE A MODAL WITHIN AN ELEMENT THAT HAS A FIXED POSITION. IT TENDS TO FREEZE PAGE -->
+      <div class="modal fade" id="professionalProfile" tabindex="-1" aria-labelledby="professionalProfileModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header bg-secondary text-white">
+              <h5 class="modal-title" id="professionalProfileModalLabel">Professional Profile</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="lead">
+                I am an analytically minded technical professional with a positive team work attitude. I possess good
+                problem resolution skills and with sound oral and written communication skills, I am able to clearly
+                communicate technical details to both technical and business users. I have good troubleshooting skills
+                and an ability to bring a fresh perspective to solving problems while prioritising, managing and
+                delivering projects with standard level agreements (SLAs) in mind.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary text-light fw-light" data-bs-dismiss="modal"><i
+                  class="far fa-times-circle"></i> Dismiss</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Modal -->
+
+      <!-- Modal -->
+      <!-- BE SURE NOT TO PLACE A MODAL WITHIN AN ELEMENT THAT HAS A FIXED POSITION. IT TENDS TO FREEZE PAGE -->
+      <div class="modal fade" id="careerObjective" tabindex="-1" aria-labelledby="careerObjectiveModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header bg-secondary text-white">
+              <h5 class="modal-title" id="careerObjectiveModalLabel">Career Objective</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="lead">
+                With my keen interests in Website and Web Application Development, LAN, WAN, and IT support, I am
+                looking forward to gaining a web developer or IT support role and be able to apply my skills and
+                contribute to my employer while developing my technical skill to an expert level.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary text-light fw-light" data-bs-dismiss="modal"><i
+                  class="far fa-times-circle"></i> Dismiss</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Modal -->
+      <h3 class="display-5">Education</h3>
       <div class="row w-100 mx-auto shadow p-3">
         <div class="col-lg-4 col-md-4">
           <p class="lead">October 2010 - September 2011</p>

@@ -19,3 +19,8 @@
     transition-property: all;
     transition-delay: 1s ease-in-out;
 }
+
+// LETTER SPACING
+@mixin letterSpacing {
+    letter-spacing: 0.1rem;
+}

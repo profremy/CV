@@ -1,5 +1,14 @@
 @use '../custom' as *;
+@use '../components/mixins' as *;
 
-.qualification {
-    font-weight: 400;
+.resume-section {
+
+    .qualification {
+        font-weight: 400;
+    }
+
+    &__cta button {
+        @include letterSpacing;
+    }
+
 }

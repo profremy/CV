@@ -117,7 +117,7 @@
             }
 
             .cta button {
-                letter-spacing: 0.1rem;
+                @include letterSpacing;
             }
         }
 
