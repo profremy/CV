@@ -11237,6 +11237,13 @@ textarea.form-control-lg {
   }
 }
 
+.dropdown__menu {
+  top: 100%;
+  right: 0 !important;
+  margin-top: 0.125rem;
+  width: max-content;
+}
+
 .not-selectable {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -11326,10 +11333,25 @@ textarea.form-control-lg {
   letter-spacing: 0.1rem;
 }
 
+.resume-section .qualification {
+  font-weight: 400;
+}
+.resume-section__cta button {
+  letter-spacing: 0.1rem;
+}
+.resume-section .qualification-left-border {
+  border-left: none;
+}
+@media (min-width: 768px) {
+  .resume-section .qualification-left-border {
+    border-left: solid 1px rgba(0, 0, 0, 0.2);
+  }
+}
+
 .textToCopy {
+  font-family: "Source Code Pro", monospace;
   border: none !important;
   background-color: #f8f9fa !important;
-  cursor: pointer;
 }
 
 .copyTrigger {
@@ -11338,13 +11360,6 @@ textarea.form-control-lg {
 
 .copyTrigger:hover {
   color: #6a8b3c;
-}
-
-.resume-section .qualification {
-  font-weight: 400;
-}
-.resume-section__cta button {
-  letter-spacing: 0.1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

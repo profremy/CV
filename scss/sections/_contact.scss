@@ -1,3 +1,14 @@
 @use '../custom' as *;
 @use '../components/mixins' as *;
 
+.textToCopy  {
+    font-family: 'Source Code Pro', monospace;
+    border: none !important;
+    background-color: $gray-100 !important;
+}
+.copyTrigger  {
+    cursor: pointer;
+}
+.copyTrigger:hover  {
+    color: $secondary;
+}
