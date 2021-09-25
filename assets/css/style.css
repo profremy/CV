@@ -11260,6 +11260,7 @@ textarea.form-control-lg {
 }
 
 ul li {
+  list-style-type: "👍";
   list-style: url("/images/check2-all.svg");
 }
 
