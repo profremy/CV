@@ -77,3 +77,20 @@
     width: max-content;
     
 }
+
+.dropdown-menu[data-bs-popper] {
+    @include media-breakpoint-down(sm) {
+        transform: translate(0);
+    }
+    background-color: $gray-100;
+    top: 100%;
+    left: 50%;
+    margin-top: 0.125rem;
+    max-width: max-content;
+    max-height: max-content;
+    transform: translate(-50%);
+}
+
+ul li {
+    list-style: url('/images/check2-all.svg');
+}

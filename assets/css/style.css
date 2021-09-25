@@ -11244,6 +11244,25 @@ textarea.form-control-lg {
   width: max-content;
 }
 
+.dropdown-menu[data-bs-popper] {
+  background-color: #f8f9fa;
+  top: 100%;
+  left: 50%;
+  margin-top: 0.125rem;
+  max-width: max-content;
+  max-height: max-content;
+  transform: translate(-50%);
+}
+@media (max-width: 575.98px) {
+  .dropdown-menu[data-bs-popper] {
+    transform: translate(0);
+  }
+}
+
+ul li {
+  list-style: url("/images/check2-all.svg");
+}
+
 .not-selectable {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -11326,7 +11345,7 @@ textarea.form-control-lg {
 @media (max-width: 575.98px) {
   .intro-section__details--right-hello {
     text-align: center;
-    padding: 0.5rem 0 0 1rem;
+    padding: 0.5rem;
   }
 }
 .intro-section__details--right-hello .cta button {
